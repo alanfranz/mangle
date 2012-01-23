@@ -18,12 +18,13 @@
 
 import sys
 from distutils.core import setup
-import py2exe
 
-
-sys.argv.append('py2exe')
-setup(
-    windows=[{'script': 'mangle.pyw'}],
-    options={'py2exe': {'bundle_files': 1, 'includes': ['sip']}},
-    zipfile=None
-)
+setup(name='mangle',
+      description='Mangle',
+      version='20111118',
+      author='FooSoft',
+      license='GPL3',
+      keywords='manga kindle',
+      url='https://github.com/alanfranz/mangle',
+      packages=['mangle'],
+     )
