@@ -17,14 +17,15 @@
 
 
 import sys
-from distutils.core import setup
+from setuptools import setup
 
 setup(name='mangle',
       description='Mangle',
       version='20111118',
       author='FooSoft',
       license='GPL3',
+      include_package_data=True,
       keywords='manga kindle',
       url='https://github.com/alanfranz/mangle',
-      packages=['mangle'],
+      packages=['mangle', 'mangle.ui', 'mangle.img'],
      )
